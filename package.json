@@ -1,0 +1,25 @@
+{
+  "name": "@de.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Radisav Savkovic <rades12340@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playgrounds/*"
+    ],
+    "nohoist": [
+      "**/normalize-scss"
+    ]
+  },
+  "scripts": {
+    "build": "yarn lerna run build",
+    "dev": "yarn lerna run dev",
+    "test": "yarn lerna run test"
+  }
+}
